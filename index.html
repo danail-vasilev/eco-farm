@@ -189,15 +189,15 @@
   }
 
   /*Image Gallery*/
-   #imageGallery ul {         
+   #imageGallery {         
           padding:0 0 0 0;
           margin:0 0 0 0;
       }
-      #imageGallery ul li {     
+      #imageGallery li {     
           list-style:none;
           margin-bottom:25px;           
       }
-      ul li img {
+      #imageGallery li img {
           cursor: pointer;
       }
       .modal-body {
@@ -239,7 +239,7 @@
       }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="main" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -249,7 +249,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Начало</a>
+      <a class="navbar-brand" href="#main">Начало</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -274,21 +274,20 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>За Вила</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <h2>За Нас</h2><br>
       <p>Тук на 1125м надморска височина в Родопите, на 7км от град Девин, посока Пловдив, на 40км от курорта Пампорово се намира Еко ферма Кехайови - място, където тишината се разкъсва от мелодията на птичките, чистият въздух съчетан с миризмата на свежи борове, цари спокойствие, за което всеки мечтае./<p>
 
       <p>Фермата се намира на тихо, спокойно и изолирано място, с величествен изглед към родопските върхове. Отглеждаме 250 овце, 70 родопски кози и 9 крави. Всичките ни животни са на пасищно отглеждане по склоновете и ливадите на централни Родопи.</p>
 
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <br><a href="#vila" class="btn btn-default btn-lg">Напред</a>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <span></span>
     </div>
   </div>
 </div>
 
-<div class="container-fluid bg-grey">
+<div style="display:none;" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
@@ -369,33 +368,17 @@
 
 <!-- Container (Fun Section) -->
 <div id="fun" class="container-fluid text-center bg-grey">
-  <h2>Fun</h2><br>
-  <h4>What we have created</h4>
+  <h2>Развлечения</h2><br>
+  <h4>Конна езда в сърцето на Родопите</h4>
   <div class="row text-center slideanim">
-    <div class="col-sm-4">
+    <div class="col-sm-12">
       <div class="thumbnail">
-        <img src="" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        <img src="" alt="horse riding" width="400" height="300">
+        <p><strong>Езда</strong></p>
+        <p></p>
       </div>
     </div>
   </div><br>
-
-  <h2>What our customers say</h2>
 </div>
 
 <!-- Container (Pricing Section) -->
@@ -492,16 +475,16 @@ marker.setMap(map);
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArsYSecy2L2yZ5-3COUicpUNlyAQJDGao&callback=myMap"></script>
 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
+  <a href="#main" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Site Made By <a href="№" title="visit">mysite</a></p>
+  <p>Created by <a href="mailto:massaro@mail.bg" title="visit">Danail Vasilev</a></p>
 </footer>
 
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#main']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
