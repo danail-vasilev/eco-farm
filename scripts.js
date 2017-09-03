@@ -83,10 +83,12 @@
           $(imageGalleryID).append(liEl);
       }
     }
-    renderImageGalleryElements("#imageGallery", images.rooms.url, images.rooms.images);
+    renderImageGalleryElements("#imageGalleryRooms", images.rooms.url, images.rooms.images);
+    renderImageGalleryElements("#imageGalleryTourism", images.tourism.url, images.tourism.images);
 
   // Image Gallery:
     $('li img').on('click',function(){
+      global.imageParentId = $(this).parent().parent().attr('id');
       var src = $(this).attr('src');
       var img = '<img src="' + src + '" class="img-responsive"/>';
       
@@ -115,7 +117,7 @@
 
   $(document).on('click', 'a.controls', function(){
     var index = $(this).attr('href');
-    var src = $('ul.row li:nth-child('+ index +') img').attr('src');             
+    var src = $('#' + global.imageParentId + ' li:nth-child('+ index +') img').attr('src');             
     
     $('.modal-body img').attr('src', src);
     
@@ -130,7 +132,7 @@
       $('a.previous').attr('href', newPrevIndex);
     }
     
-    var total = $('ul.row li').length + 1; 
+    var total = $('#' + global.imageParentId + ' li').length + 1; 
     //hide next button
     if(total === newNextIndex){
       $('a.next').hide();

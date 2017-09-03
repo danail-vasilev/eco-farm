@@ -6,6 +6,10 @@
     "rooms": {
         "images": ["1406149522646096.jpeg","1406149523291421.jpeg","1406149523816688.jpeg","1406149523972056.jpeg","1406149524428503.jpeg","1406149524838029.jpeg","1406149525255509.jpeg","1406149525585951.jpeg","1406149526101612.jpeg","1406149526134924.jpeg","1406149527216701.jpeg","1406149527786170.jpeg","1406149527845445.jpeg","1406149528727850.jpeg","1406149528748520.jpeg"],
         "url": "resources/rooms/"
+    },
+    "tourism": {
+        "images": ["MAY_4495.jpg","MAY_4727.jpg","MAY_4935.jpg","MAY_4993.jpg","MAY_5081.jpg","MAY_5319.jpg","MAY_5423.jpg","MAY_5571.jpg","MAY_5625.jpg"],
+        "url": "resources/rooms/compressed/tourism/"
     }
 
 }

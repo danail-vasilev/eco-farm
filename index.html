@@ -12,7 +12,15 @@
   <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body id="main" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -41,7 +49,6 @@
   <p>Тук на 1125м надморска височина в Родопите се намира Еко ферма Кехайови - място, където тишината се разкъсва от мелодията на птичките, чистият въздух е съчетан с миризмата на свежи борове и навред цари спокойствие, за което всеки мечтае.
 </p> 
 </div>
-
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
@@ -50,25 +57,21 @@
       <p>Тук на 1125м надморска височина в Родопите, на 7км от град Девин, посока Пловдив, на 40км от курорта Пампорово се намира Еко ферма Кехайови - място, където тишината се разкъсва от мелодията на птичките, чистият въздух съчетан с миризмата на свежи борове, цари спокойствие, за което всеки мечтае./<p>
 
       <p>Фермата се намира на тихо, спокойно и изолирано място, с величествен изглед към родопските върхове. Отглеждаме 250 овце, 70 родопски кози и 9 крави. Всичките ни животни са на пасищно отглеждане по склоновете и ливадите на централни Родопи.</p>
-
-      <br><a href="#vila" class="btn btn-default btn-lg">Напред</a>
     </div>
     <div class="col-sm-4">
       <img src="resources/rooms/compressed/MAY_5318.jpg" alt="" width="100%">
     </div>
   </div>
-</div>
-
-<div style="display:none;" class="container-fluid bg-grey">
+  <br />  
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      <div class="fb-post" data-href="https://www.facebook.com/daniela.iskreva/posts/10209967310684180:0" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/daniela.iskreva/posts/10209967310684180:0" class="fb-xfbml-parse-ignore">Posted by <a href="#" role="button">Daniela Iskreva</a> on&nbsp;<a href="https://www.facebook.com/daniela.iskreva/posts/10209967310684180:0">Sunday, July 30, 2017</a></blockquote></div>
     </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-sm-4">
+      <div class="fb-post" data-href="https://www.facebook.com/boris.pobornikov.3/posts/10209322865140587:0" data-width="100%" data-show-text="true"><blockquote cite="https://www.facebook.com/boris.pobornikov.3/posts/10209322865140587:0" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/boris.pobornikov.3">Boris Pobornikov</a> on&nbsp;<a href="https://www.facebook.com/boris.pobornikov.3/posts/10209322865140587:0">Thursday, August 24, 2017</a></blockquote></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1521450361210768&amp;id=100000374559380&amp;substory_index=0" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/permalink.php?story_fbid=1521450361210768&amp;id=100000374559380&amp;substory_index=0" class="fb-xfbml-parse-ignore">Posted by <a href="#" role="button">Марияна Шишманян</a> on&nbsp;<a href="https://www.facebook.com/permalink.php?story_fbid=1521450361210768&amp;id=100000374559380&amp;substory_index=0">Wednesday, August 23, 2017</a></blockquote></div>
     </div>
   </div>
 </div>
@@ -85,7 +88,7 @@
   </div>
   <br/>
   <div class="row slideanim">
-    <ul id="imageGallery" class="row">
+    <ul id="imageGalleryRooms" class="imageGallery row">
     </ul>  
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -95,7 +98,7 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal --> 
-</div>
+  </div>
 <br><br>
 </div>
 
@@ -150,6 +153,12 @@
         <img src="resources/rooms/compressed/MAY_5490.jpg" alt="" width="100%">
     </div>
   </div><br>
+  <h4>Туризъм</h4>
+  <div class="row slideanim">
+    <ul id="imageGalleryTourism" class="imageGallery row">
+    </ul>  
+
+  </div>
 </div>
 
 <!-- Container (Pricing Section) -->
@@ -219,7 +228,7 @@
   <div class="row">
     <div class="col-sm-5">
       <p>Свържете се с нас</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span><a href="http://share.here.com/r/mylocation/e-eyJuYW1lIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgiLCJhZGRyZXNzIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgsIERldmluLCBCdWxnYXJpYSIsImxhdGl0dWRlIjo0MS43NTcyMDAwNSwibG9uZ2l0dWRlIjoyNC40NTI0MTA2OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNDQ3NTgxOTM1NTE0NjkwfQ==?link=addresses&amp;fb_locale=en_US&amp;ref=facebook" target="_blank" rel="nofollow noopener" onmouseover="LinkshimAsyncLink.swap(this, &quot;http:\/\/share.here.com\/r\/mylocation\/e-eyJuYW1lIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgiLCJhZGRyZXNzIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgsIERldmluLCBCdWxnYXJpYSIsImxhdGl0dWRlIjo0MS43NTcyMDAwNSwibG9uZ2l0dWRlIjoyNC40NTI0MTA2OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNDQ3NTgxOTM1NTE0NjkwfQ==?link=addresses&amp;fb_locale=en_US&amp;ref=facebook&quot;);" onclick="LinkshimAsyncLink.referrer_log(this, &quot;http:\/\/share.here.com\/r\/mylocation\/e-eyJuYW1lIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgiLCJhZGRyZXNzIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgsIERldmluLCBCdWxnYXJpYSIsImxhdGl0dWRlIjo0MS43NTcyMDAwNSwibG9uZ2l0dWRlIjoyNC40NTI0MTA2OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNDQ3NTgxOTM1NTE0NjkwfQ==?link=addresses&amp;fb_locale=en_US&amp;ref=facebook&quot;, &quot;\/si\/ajax\/l\/render_linkshim_log\/?u=http\u00253A\u00252F\u00252Fshare.here.com\u00252Fr\u00252Fmylocation\u00252Fe-eyJuYW1lIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgiLCJhZGRyZXNzIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgsIERldmluLCBCdWxnYXJpYSIsImxhdGl0dWRlIjo0MS43NTcyMDAwNSwibG9uZ2l0dWRlIjoyNC40NTI0MTA2OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNDQ3NTgxOTM1NTE0NjkwfQ\u00253D\u00253D\u00253Flink\u00253Daddresses\u002526fb_locale\u00253Den_US\u002526ref\u00253Dfacebook&amp;h=ATPuTNhrVUUU1NGVdFuddu9ERfiI7kZrWA_03uvO0NH9O6s9vLZ7ndymXPOIUJ3agae8HA9Jy2CyWB5rjwsr5XCyJL0BgvRLxIPZQdnHIr47RiP1K7bTl7FOeufAdbaoG27Cs73y2g&amp;enc&amp;d&quot;);"> Еко Ферма Кехайови<br> Devin, Bulgaria 4801</a></p>
+      <p><span class="glyphicon glyphicon-map-marker"></span><a href="http://share.here.com/r/mylocation/e-eyJuYW1lIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgiLCJhZGRyZXNzIjoiXHUwNDE1XHUwNDNhXHUwNDNlIFx1MDQyNFx1MDQzNVx1MDQ0MFx1MDQzY1x1MDQzMCBcdTA0MWFcdTA0MzVcdTA0NDVcdTA0MzBcdTA0MzlcdTA0M2VcdTA0MzJcdTA0MzgsIERldmluLCBCdWxnYXJpYSIsImxhdGl0dWRlIjo0MS43NTcyMDAwNSwibG9uZ2l0dWRlIjoyNC40NTI0MTA2OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNDQ3NTgxOTM1NTE0NjkwfQ==?link=addresses&amp;fb_locale=en_US&amp;ref=facebook" target="_blank" rel="nofollow noopener"> Еко Ферма Кехайови<br> Devin, Bulgaria 4801</a></p>
       <p><span class="glyphicon glyphicon-thumbs-up"></span> <a href="https://www.facebook.com/vilakehayovi/" target="_blank" title="https://www.facebook.com/vilakehayovi/"> https://www.facebook.com/vilakehayovi/</a></p>
       <p><span class="glyphicon glyphicon-phone"></span> 089 470 7232</p>
       <p><span class="glyphicon glyphicon-envelope"></span> mariana_farm1@abv.bg</p>
