@@ -19,7 +19,7 @@ h4 {
 }  
 .jumbotron {
     background-size: 100% 100%;
-    background-image:url('resources/ferma  January Maya-20170816T192344Z-001/ferma  January Maya/compressed/A Ferma Kehayovi.jpg');
+    background-image:url('resources/rooms/compressed/A Ferma Kehayovi.jpg');
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -210,7 +210,7 @@ footer .glyphicon {
     float:right;
     text-align:right;
 }
-    /*override modal for demo only*/
+    /*override modal*/
     .modal-dialog {
         max-width:500px;
         padding-top: 90px;
@@ -220,9 +220,4 @@ footer .glyphicon {
             width:500px;
             padding-top: 90px;
         }          
-    }
-    @media screen and (max-width:1500px){
-        #ads {
-            display:none;
-        }
     }
