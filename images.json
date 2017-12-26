@@ -1,15 +1,15 @@
 {
     "products": {
-        "images": ["IMG_7817.jpg","IMG_7862.jpg","IMG_7873.jpg","IMG_7881.jpg","IMG_7887.jpg"],
+        "images": ["IMG_7817.jpg", "IMG_7862.jpg", "IMG_7873.jpg", "IMG_7881.jpg", "IMG_7887.jpg"],
         "url": "resources/products/"
     },
     "rooms": {
-        "images": ["1406149522646096.jpeg","1406149523291421.jpeg","1406149523816688.jpeg","1406149523972056.jpeg","1406149524428503.jpeg","1406149524838029.jpeg","1406149525255509.jpeg","1406149525585951.jpeg","1406149526101612.jpeg","1406149526134924.jpeg","1406149527216701.jpeg","1406149527786170.jpeg","1406149527845445.jpeg","1406149528727850.jpeg","1406149528748520.jpeg"],
+        "images": ["1406149522646096.jpeg", "1406149523291421.jpeg", "1406149523816688.jpeg", "1406149523972056.jpeg", "1406149524428503.jpeg", "1406149524838029.jpeg", "1406149525255509.jpeg", "1406149525585951.jpeg", "1406149526101612.jpeg", "1406149526134924.jpeg", "1406149527216701.jpeg", "1406149527786170.jpeg", "1406149527845445.jpeg", "1406149528727850.jpeg", "1406149528748520.jpeg"],
         "url": "resources/rooms/"
     },
     "tourism": {
-        "images": ["MAY_4495.jpg","MAY_4727.jpg","MAY_4935.jpg","MAY_4993.jpg","MAY_5081.jpg","MAY_5319.jpg","MAY_5423.jpg","MAY_5571.jpg","MAY_5625.jpg"],
-        "url": "resources/rooms/compressed/tourism/"
+        "images": ["001_tn.jpg", "002_tn.jpg", "003_tn.jpg", "004_tn.jpg", "005_tn.jpg", "006_tn.jpg", "007_tn.jpg", "008_tn.jpg", "009_tn.jpg", "010_tn.jpg", "011_tn.jpg", "012_tn.jpg", "013_tn.jpg", "014_tn.jpg", "015_tn.jpg", "016_tn.jpg", "017_tn.jpg", "018_tn.jpg", "019_tn.jpg", "020_tn.jpg", "021_tn.jpg", "022_tn.jpg", "023_tn.jpg", "024_tn.jpg", "025_tn.jpg", "026_tn.jpg", "027_tn.jpg", "028_tn.jpg", "029_tn.jpg", "030_tn.jpg", "031_tn.jpg", "032_tn.jpg", "033_tn.jpg", "034_tn.jpg", "035_tn.jpg", "036_tn.jpg", "037_tn.jpg", "038_tn.jpg", "039_tn.jpg", "040_tn.jpg", "041_tn.jpg", "042_tn.jpg", "043_tn.jpg", "044_tn.jpg", "045_tn.jpg", "046_tn.jpg", "047_tn.jpg", "048_tn.jpg", "049_tn.jpg", "050_tn.jpg", "051_tn.jpg", "052_tn.jpg", "053_tn.jpg", "054_tn.jpg", "055_tn.jpg"],
+        "url": "resources/tourism/thumbnails_200/"
     }
 
 }
